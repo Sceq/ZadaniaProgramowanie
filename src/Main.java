@@ -1,5 +1,5 @@
 import tasks.Animal;
-import tasks.Car;
+import tasks.devices.Car;
 import tasks.Human;
 
 public class Main {

@@ -1,5 +1,7 @@
 package tasks;
 
+import tasks.devices.Car;
+
 import java.util.Date;
 
 public class Human {
@@ -52,6 +54,16 @@ public class Human {
             }
         }
 
-
+    @Override
+    public String toString() {
+        return "Human{" +
+                "pet=" + pet +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", car=" + car +
+                ", salary=" + salary +
+                '}';
     }
+}
 

@@ -1,11 +1,12 @@
-import tasks.creatures.Animal;
+
+import tasks.creatures.Pet;
 import tasks.devices.Car;
 import tasks.creatures.Human;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("\nZadanie 1\n");
-        Animal doggo = new Animal("canis");
+        Pet doggo = new Pet("canis");
 
         doggo.feed();
         doggo.takeForAWalk();

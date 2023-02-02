@@ -2,7 +2,7 @@ package tasks.creatures;
 
 import tasks.Selleable;
 
-public class Animal implements Selleable {
+abstract class Animal implements Selleable, Feedable{
     private static final Double DEFAULT_DOG_WEIGHT = 5.0;
     private static final Double DEFAULT_CAT_WEIGHT = 3.0;
     private static Boolean IS_HUMAN = false;

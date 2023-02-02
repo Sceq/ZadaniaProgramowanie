@@ -54,8 +54,8 @@ public class Human {
             }
         }
 
-    @Override
-    public String toString() {
+
+    public String toStringHuman() {
         return "Human{" +
                 "pet=" + pet +
                 ", firstName='" + firstName + '\'' +

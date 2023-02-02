@@ -1,28 +1,30 @@
 package tasks.devices;
 
-public class Car {
-
-    private final String model;
-    private final String producer;
+public class Car extends  Device{
     private final String colour;
     public Double value;
 
 
     public Car(String model, String producer, String colour, Double value) {
-        this.model = model;
-        this.producer = producer;
+        super(model, producer);
         this.colour = colour;
         this.value = value;
 
     }
 
-    @Override
-    public String toString() {
+
+    public String toStringCar() {
         return "Car{" +
                 "model='" + model + '\'' +
                 ", producer='" + producer + '\'' +
                 ", colour='" + colour + '\'' +
                 ", value=" + value +
                 '}';
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("start brumbruma.");
+
     }
 }

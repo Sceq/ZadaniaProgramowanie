@@ -43,8 +43,8 @@ public class Animal {
 
     }
 
-    @Override
-    public String toString() {
+
+    public String toStringAnimal() {
         return "Animal{" +
                 "species='" + species + '\'' +
                 ", isAlive=" + isAlive +

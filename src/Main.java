@@ -21,5 +21,9 @@ public class Main {
         Car samochod = new Car("A150", "Audi", "czerwono-zielonawo-niebieskie", 100000.0);
         czlek.setCar(samochod);
 
+        System.out.println("\nZadanie 6\n");
+        System.out.println(czlek.toStringHuman());
+        System.out.println(samochod.toStringCar());
+        System.out.println(doggo.toStringAnimal());
     }
 }

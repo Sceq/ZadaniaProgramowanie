@@ -1,6 +1,6 @@
-import tasks.Animal;
+import tasks.creatures.Animal;
 import tasks.devices.Car;
-import tasks.Human;
+import tasks.creatures.Human;
 
 public class Main {
     public static void main(String[] args) {

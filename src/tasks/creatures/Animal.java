@@ -1,9 +1,12 @@
-package tasks;
+package tasks.creatures;
 
-public class Animal {
+import tasks.Selleable;
+
+public class Animal implements Selleable {
     private static final Double DEFAULT_DOG_WEIGHT = 5.0;
     private static final Double DEFAULT_CAT_WEIGHT = 3.0;
-
+    private static Boolean IS_HUMAN = false;
+    public Human owner;
     String species;
     private Boolean isAlive = true;
     private Double weight;
@@ -50,5 +53,20 @@ public class Animal {
                 ", isAlive=" + isAlive +
                 ", weight=" + weight +
                 '}';
+    }
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if(seller != this.owner){
+            System.out.println("Ktoś tu szykuje scam!");
+            return;
+        }
+        if(buyer.getCash() < price){
+            System.out.println("Ktoś tu szykuje scam!");
+            return;
+        }
+        buyer.setCash(buyer.getCash() - price);
+        seller.setCash(seller.getCash() + price);
+        this.owner = buyer;
+        System.out.println("Gratuluje zakupu!");
     }
 }

@@ -18,7 +18,7 @@ public class Main {
         doggo.feed();
         System.out.println("\nZadanie 2\n");
         Human czlek = new Human(doggo, "Filip", "Kaniecki", 22);
-        Car samochod = new Car("A150", "Audi", "czerwono-zielonawo-niebieskie");
+        Car samochod = new Car("A150", "Audi", "czerwono-zielonawo-niebieskie", 100000.0);
         czlek.setCar(samochod);
 
     }
